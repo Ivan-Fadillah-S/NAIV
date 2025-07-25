@@ -1,0 +1,648 @@
+:root {
+    --primary: #61F27B;
+    --bg: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg);
+    color: #000000; 
+
+}
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0.8rem 7%;
+    gap: 0; 
+    background-color: rgba(0,0,0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.navbar-logo {
+    margin-right: 17px; 
+    margin-left: -80px;
+    padding-top: 0.35rem;
+    padding-left: 0;
+    font-family: Lalezar;
+    font-size: 2.2rem;
+    color:var(--primary);
+}
+
+.navbar-logo span {
+    color:#FFFFFF;
+}
+
+.navbar-nav a:nth-child(1) {
+    margin-right: 15px; 
+}
+
+.navbar-nav a:nth-child(2) {
+    margin-right: 15px; 
+}
+
+.navbar-nav a:nth-child(3) {
+    margin-right: 15px; 
+}
+
+.navbar-extra {
+    padding-top: 0.35rem;
+    margin-left: auto; 
+    margin-right:-80px;
+    
+}
+
+.navbar-nav a {
+    color:#FFFFFF;
+    display: inline-block;
+    font-size: 1.1rem;
+}
+
+.navbar-nav a:hover {
+    color:var(--primary);
+    text-decoration: underline;
+    transition: 0.25s linear;
+}
+
+.navbar-extra a {
+    color:#FFFFFF;
+}
+
+.navbar-extra a:hover {
+    color:var(--primary);
+    transition: 0.25s linear;
+}
+
+#hamburger-menu {
+    display : none;
+}
+
+/* hero */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url('img/header-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: relative;
+    width: 100%;
+    overflow-x: hidden;
+    
+}
+
+.hero::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    bottom: 0;
+    background: linear-gradient(0deg, rgb(255, 255, 255)3%, rgba(255, 255, 255, 0)25%);
+}
+
+.hero .content {
+    padding: 1rem 7%;
+    max-width: 100%;
+    width: 100%;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+.content h1 {
+    font-size: 5em;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(1,1,3,0.5);
+    margin-top: -100px;
+    margin-bottom: -40px;
+    font-family: 'Lalezar';
+}
+
+.hero .content h1 .brand {
+    font-family: 'Lalezar'; 
+    color: var(--primary); 
+}
+
+.hero .content h1 .sub {
+    font-family: 'Poppins', sans-serif; 
+    color: white; 
+    font-size: 0.8em;
+}
+
+.hero .content p {
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    line-height: 1.4;
+    font-weight:100;
+    text-shadow: 1px 1px 3px rgba(1,1,3,0.5);
+}
+
+.hero .content .cta {
+    margin-top: 1rem;
+    display: inline-block;
+    padding : 0.8rem 1.8rem;
+    font-size: 1.2rem;
+    color: white;
+    background-color: var(--primary);
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 3px rgba(1,1,3,0.5);
+}
+
+.hero .content .ctas {
+    margin-top: 1rem;
+    display: inline-block;
+    padding : 0.8rem 2.7rem;
+    font-size: 1.2rem;
+    color: white;
+    background-color: var(--primary);
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 3px rgba(1,1,3,0.5);
+    margin-left: 1rem; 
+}
+
+.about, .produk, .contact {
+    padding: 7rem 7% 1rem;
+}
+
+.about h2, .produk h2, .contact h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem ;
+    font-weight: 700;
+}
+
+.about h2 span, .produk h2 span, .contact h2 span {
+    color:var(--primary);
+}
+
+/* About */
+.about .row {
+    display:flex;
+}
+
+.about .row .about-img {
+    flex: 1 1 45rem;
+}
+
+.about .row .about-img img {
+    width: 70%;     
+    margin-left: 120px; 
+    height: auto;
+}
+
+.about .row .content {
+    flex: 1 1 35rem;
+    padding: 0rem;
+    margin-left: -90px;
+}
+
+.about .row .content p {
+    margin-bottom:100px;
+    margin-right:100px;
+    font-size: 1.269rem;
+    font-weight: 400;
+    margin-top: -5px;
+    line-height: 1.6;
+}
+
+/* Produk */
+.produk .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.produk .row .card .img {
+    border-radius: 50%;
+    border: 1px solid #000000;
+    width: 70%;
+}
+
+.produk .card {
+    text-align: center;
+    padding-bottom: 1.2rem;
+}
+
+.title {
+    max-width: 200px;    
+    white-space: normal; 
+    word-wrap: break-word;
+    text-align: center;  
+    margin: 0 auto;      
+}
+
+
+/* kontak */
+.contact .row {
+    display: flex;
+    margin-top: 2rem;
+    background-color: #222222;
+}
+
+.contact .row .map {
+    flex : 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contact .row form {
+    flex: 1 1 45rem;
+    padding: 1.5rem 2rem;
+    text-align: center;
+}
+
+.contact .row form .input {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: black;
+    border: 1px solid white;
+    padding-left: 2rem;
+}
+
+.contact .row form .input input {
+    width: 50%;
+    padding: 1.5rem;
+    font-size: 1rem;
+    background: none;
+    color: #FFFFFF;
+}
+
+.contact .row form .btn {
+    margin-top: 2rem;
+    display:inline-block;
+    padding: 0.8rem 4rem;
+    font-size: 1rem;
+    color:#FFFFFF;
+    background-color: var(--primary);
+    cursor: pointer;
+
+}
+
+.input svg {
+  stroke: white !important;
+  width: 18px;
+  height: 18px;
+}
+
+/* footer */
+footer {
+    background-color: var(--primary);
+    text-align: center;
+    padding: 1.3rem 0 2rem;
+    margin-top: 3rem;
+}
+
+footer .socials {
+    padding: 1rem 0;
+}
+
+.social img {
+  width: 25px;
+  height: 25px;
+}
+
+footer .social a:hover, 
+footer .links a:hover {
+    color: #000000;
+    transition: 0.2s;
+}
+
+
+#tokped {
+    
+  width: 32px;
+  height: auto;
+}
+
+footer .links a {
+    color: #FFFFFF;
+    padding: 0.8rem;
+}
+
+footer .credit {
+    font-size: 0.8rem;
+    margin-top: 3px;
+}
+
+footer .credit a {
+    color: black;
+    font-weight: 700;
+}
+
+/* Search Form */
+.produk .search-form {
+  margin: -2rem auto 2rem; 
+  width: 35rem; 
+  max-width: 90%; 
+  height: 3.5rem;
+  display: flex; 
+  align-items: center;
+  background-color: #fff; 
+  border: 1px solid #ddd; 
+  border-radius: 0.5rem;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.05); 
+  overflow: hidden; 
+}
+
+.produk .search-form input {
+  height: 100%;
+  flex: 1; 
+  font-size: 1.6rem;
+  color: #333; 
+  padding: 1rem 1.5rem; 
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.produk .search-form label {
+  cursor: pointer;
+  font-size: 2rem;
+  margin-right: 1.5rem;
+  color: #555;
+  padding: 0 1rem; 
+}
+
+/* pesan terkim */
+.success-message {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.success-message {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+/* queries */
+/* laptop */
+
+@media (max-width: 1366px) {
+    html {
+        font-size: 75%
+    }
+    .about .row .about-img img {
+        margin-left: 100px; 
+    }
+
+    .about .row .content {
+        margin-left: -150px;
+    }
+
+    .about .row .content p {
+        margin-top: -5px;
+        max-width: 1000px;
+        margin-left: 70px;;
+        margin-right: -20px;
+        margin-right:80px;
+        font-size: 1.1rem;
+    }   
+}
+
+/* ekstrta */
+@media (max-width: 1195px) {
+    html {
+        font-size: 75%
+    }
+    .navbar-logo {
+        margin-left: -35px;
+    }
+
+    .navbar-extra { 
+        margin-right:-35px;
+    
+    }
+    
+
+    .about .row .about-img img {
+        margin-left: 100px; 
+    }
+
+    .about .row .content {
+        margin-left: -90px;
+    }
+
+    .about .row .content p {
+        margin-top: -10px;
+        max-width: 1000px;
+        margin-left: 70px;;
+        margin-right:10px;
+        font-size: 0.98rem;
+    }   
+}
+
+/* tablet */
+@media (max-width: 768px) {
+    html {
+        font-size: 62.5%
+    }
+    .about .row .about-img img {   
+        margin-left: 40px; 
+        margin-top: -15px;
+    }
+    .about .row .content {
+        margin-left: -72px;
+    }
+
+    .about .row .content {
+        flex: 1 1 35rem;
+        padding: 0rem;
+        margin-left: -90px;
+    }
+
+    .about .row .content p {
+        text-align: justify;
+    }
+
+    #hamburger-menu {
+        display: inline-block;
+        margin-left: 5px;;
+    }
+
+    .navbar-logo {
+        margin-left: -15px;
+    }
+
+    .navbar-extra { 
+        margin-right: -15px;
+    
+    }   
+
+    .navbar-nav {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: black;
+        width: 30rem;
+        height: 100vh;
+        transition: 0.3s;
+    }
+
+    .navbar-nav.active {
+        right: 0;
+    }
+
+    .navbar-nav a {
+        color: var(--bg);
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+    }
+
+    .content h1 {
+        margin-bottom: -30px;
+    }
+    
+    .about .row {
+        flex-wrap:wrap;
+    }
+
+    .about .row .about-img img {
+        margin-left: 100px; 
+    }
+
+    .about .row .content {
+        margin-left: -90px;
+    }
+
+    .about .row .content p {
+        margin-top: 10px;
+        max-width: 1000px;
+        margin-left: 70px;;
+        margin-right: -20px;
+        font-size: 1.2rem;
+    }
+
+    .contact .row {
+        flex-wrap: wrap;
+    }
+}
+
+/* esktra1 */
+@media (max-width: 600px) {
+    html {
+        font-size: 62.5%
+    }
+    .content h1 {
+        margin-bottom: -7px;
+        line-height: 0.85;
+    }
+}
+/* mobile */
+@media (max-width: 560px) {
+    html {
+        font-size: 55%
+    }
+
+    .hero .content {
+        padding: 1rem 5%;
+    }
+
+    .hero {
+        height: 100vh;
+        background-image:url('assets/hero.jpg')linear-gradient(to bottom, rgba(0,0,0,0.6)3%, rgba(0,0,0,0.1))25%;
+        background-size: cover;
+        background-position: relative;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+
+    .content h1 {
+        margin-bottom: -7px;
+        line-height: 0.85;
+    }
+    .about .row .about-img img {   
+        margin-left: 55px; 
+        margin-top: -15px;
+    }
+    .about .row .content {
+        margin-left: -72px;
+    }
+
+    .about .row .content {
+        flex: 1 1 35rem;
+        padding: 0rem;
+        margin-left: -90px;
+    }
+
+    .about .row .content p {
+        text-align: justify;
+    }
+
+    .about .row .content p {
+        margin-top: 10px;
+        max-width: 1000px;
+        margin-left: 70px;;
+        margin-right: -10px;
+    }
+        .social img {
+    width: 20px;
+     height: 20px;
+    }
+
+    #tokped {
+    
+    width: 27px;
+    height: auto;
+    }
+
+    .title {
+        max-width: 200px;    
+        white-space: normal; 
+        word-wrap: break-word;
+        text-align: center;  
+        margin: 0 auto;      
+    }
+
+    .produk .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 -30px;
+    }
+
+    .produk .row .card .img {
+        border-radius: 50%;
+        border: 1px solid #000000;
+        width: 70%;
+    }
+
+    .produk .card {
+        text-align: center;
+        padding-bottom: 1.2rem;
+    }
+
+
+}
+
+
+
